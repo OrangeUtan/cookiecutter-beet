@@ -24,7 +24,7 @@ minecraft_username [OrangeUtan]: Oran9eUtan
 user_namespace [orangeutan]: oran9eutan
 project_name []: Hello Beet
 project_namespace [hello_beet]:
-github_url: https://github.com/OrangeUtan/hello_beet
+repo_url: https://github.com/OrangeUtan/hello_beet
 description []: My first Beet project
 version [0.1.0]:
 Select open_source_license:

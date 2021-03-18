@@ -1,4 +1,4 @@
-github_url = "{{ cookiecutter.github_url }}"
+github_url = "{{ cookiecutter.repo_url }}"
 
 [version]
 current = "{{ cookiecutter.version }}"
