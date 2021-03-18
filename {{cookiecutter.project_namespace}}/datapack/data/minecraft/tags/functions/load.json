@@ -1,1 +1,1 @@
-{"values":["{{cookiecutter.user_namespace}}:{{cookiecutter.project_namespace}}/load"]}
+{"values":["{{cookiecutter.datapack_namespace}}:{{cookiecutter.project_namespace}}/load"]}
