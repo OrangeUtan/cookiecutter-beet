@@ -41,6 +41,8 @@ Select build_automation:
 1 - invoke
 2 - make
 Choose from 1, 2 [1]: 1
+datapack [y]: y
+resourcepack [y]: y
 ```
 
 <details>
