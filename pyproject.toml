@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cookiecutter-beet"
+version = "0.1.0"
+description = "Cookiecutter template for beet projects"
+authors = ["Oran9eUtan <Oran9eUtan@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tbump = "^6.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
