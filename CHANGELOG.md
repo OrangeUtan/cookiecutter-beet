@@ -1,6 +1,11 @@
 # Changelog
 
-## [0.1.0]
+## [0.3.0]
+### Added
+- datapack option
+- resourcepack option
+
+## [0.2.0]
 ### Added
 - Poetry project
 - Beet project
