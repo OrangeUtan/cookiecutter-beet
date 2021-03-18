@@ -8,7 +8,7 @@
 - Basic resourecpack structure
 - Basic datapack structure (following [mc-datapacks conventions](https://mc-datapacks.github.io/en/conventions/))
 - Auto LICENSE file
-- Invoke tasks
+- Build automation using Invoke or Make
 - Version bumping with tbump
 - load/install/uninstall function
 - [pre-commit](https://pre-commit.com/) git hook
