@@ -2,4 +2,4 @@
 # Create scoreboard objectives, teams, etc here
 
 # Set currently installe datapack version
-data modify storage minecraft:{{cookiecutter.datapack_namespace}}.{{cookiecutter.project_namespace}} version set value "{{cookiecutter.version}}"
+data modify storage minecraft:{{cookiecutter.user_namespace}}.{{cookiecutter.project_namespace}} version set value "{{cookiecutter.version}}"

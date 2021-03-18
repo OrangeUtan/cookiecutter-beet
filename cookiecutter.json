@@ -1,7 +1,7 @@
 {
     "github_username": null,
     "minecraft_username": "{{cookiecutter.github_username}}",
-    "datapack_namespace": "{{ cookiecutter.github_username.lower().replace(' ', '_').replace('-', '_') }}",
+    "user_namespace": "{{ cookiecutter.github_username.lower().replace(' ', '_').replace('-', '_') }}",
     "project_name": null,
     "project_namespace": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "repo_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_namespace }}",

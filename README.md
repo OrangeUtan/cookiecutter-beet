@@ -21,7 +21,7 @@ Cookiecutter prompts you for information about your project:
 ```
 github_username []: OrangeUtan
 minecraft_username [OrangeUtan]: Oran9eUtan
-datapack_namespace [orangeutan]: oran9eutan
+user_namespace [orangeutan]: oran9eutan
 project_name []: Hello Beet
 project_namespace [hello_beet]:
 repo_url: https://github.com/OrangeUtan/hello_beet

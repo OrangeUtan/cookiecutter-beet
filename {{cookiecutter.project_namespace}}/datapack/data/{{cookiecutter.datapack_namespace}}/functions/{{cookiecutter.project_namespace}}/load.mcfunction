@@ -1,2 +1,0 @@
-# Check if datapack needs to be installed
-execute unless data storage minecraft:{{cookiecutter.datapack_namespace}}.{{cookiecutter.project_namespace}} {"version": "{{cookiecutter.version}}"} run function {{cookiecutter.datapack_namespace}}:{{cookiecutter.project_namespace}}/install
