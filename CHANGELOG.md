@@ -1,6 +1,11 @@
 # Changelog
 
 ## [0.3.2]
+### Added
+- .gitignore
+- pre-commit-config configuration file
+
+## [0.3.2]
 ### Fixed
 - tasks.py was missing newlines
 
