@@ -36,6 +36,11 @@ Select open_source_license:
 6 - Not open source
 Choose from 1, 2, 3, 4, 5, 6 [1]: 1
 minify_release [y]: y
+use_poetry [y]: y
+Select build_automation:
+1 - invoke
+2 - make
+Choose from 1, 2 [1]: 1
 ```
 
 <details>
@@ -75,20 +80,22 @@ minify_release [y]: y
     └── tbump.toml
 </details>
 
-### Install build tools
-- [Invoke](http://www.pyinvoke.org/): `pip install invoke`<br>
-- Poetry: https://python-poetry.org/docs/#installation
-
 ### Install dependencies
-```
-$ invoke install
-```
-The **install** task will automatically setup Poetry and pre-commit for you
+If you want to use Poetry: https://python-poetry.org/docs/#installation
+
+Build automation:
+- Either [Invoke](http://www.pyinvoke.org/): `pip install invoke`<br>
+- Or you have Make on your system
+
+```invoke install``` or ```make install```
+
+
+The **install** task/target will automatically setup Poetry and pre-commit for you
 
 ## Features
 - Preconfigured [Beet](https://github.com/mcbeet/beet) project
 - Python dependency management with [Poetry](https://python-poetry.org/)
 - Version bumping with [tbump](https://github.com/TankerHQ/tbump)
-- Task execution using [Invoke](http://www.pyinvoke.org/) (Python Makefile equivalent)
+- Build automation using [Invoke](http://www.pyinvoke.org/) or Make
 - [pre-commit](https://pre-commit.com/) git hook
 - Formatting with [black](https://github.com/psf/black) and [isort](https://github.com/PyCQA/isort)
