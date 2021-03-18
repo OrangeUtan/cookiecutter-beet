@@ -1,6 +1,6 @@
 {
     "display": {
-        "title": [{"text":"{{cookiecutter.project_name}}"}, {"storage": "{{cookiecutter.user_namespace}}.{{cookiecutter.project_namespace}}", "nbt": "version", "color":"red"}],
+        "title": [{"text":"{{cookiecutter.project_name}} "}, {"text": "{{cookiecutter.version}}", "color": "gold"}],
         "description": "{{cookiecutter.description}}",
         "icon": {
             "item": "minecraft:carrot"
