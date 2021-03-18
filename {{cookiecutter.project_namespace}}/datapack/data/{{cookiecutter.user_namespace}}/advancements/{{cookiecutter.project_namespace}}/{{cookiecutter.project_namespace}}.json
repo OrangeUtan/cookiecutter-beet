@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": [{"text":"{{cookiecutter.project_name}}"}, {"storage": "{{cookiecutter.user_namespace}}.{{cookiecutter.project_namespace}}", "nbt": "version", "color":"red"}],
+        "description": "{{cookiecutter.description}}",
+        "icon": {
+            "item": "minecraft:carrot"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:{{cookiecutter.user_namespace}}",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
