@@ -50,7 +50,7 @@ def run(args):
 def format(c):
     """ Format files """
 
-    {% if cookiecutter.use_poetry == "y" %}check_virtualenv(){% endif -%}
+    {% if cookiecutter.use_poetry == "y" %}check_virtualenv(){% endif %}
     run(["black", ".", "--config", "pyproject.toml"])
     run(["isort", ".", "--settings-path", "pyproject.toml"])
 
@@ -59,7 +59,7 @@ def format(c):
 def release(c):
     """ Create a beet release of this project """
 
-    {% if cookiecutter.use_poetry == "y" %}check_virtualenv(){% endif -%}
+    {% if cookiecutter.use_poetry == "y" %}check_virtualenv(){% endif %}
     run(["beet", "--config", "beet-release.json"])
 
 
@@ -67,7 +67,7 @@ def release(c):
 def bump(c, new_version, dry=False):
     """ Bump the version of this project """
 
-    {% if cookiecutter.use_poetry == "y" %}check_virtualenv(){% endif -%}
+    {% if cookiecutter.use_poetry == "y" %}check_virtualenv(){% endif %}
 
     args = ["tbump", new_version]
     if dry:

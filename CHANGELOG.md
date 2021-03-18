@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2]
+### Fixed
+- tasks.py was missing newlines
+
+## [0.3.1]
+### Changed
+- Renamed option github_url to repo_url
+
 ## [0.3.0]
 ### Added
 - datapack option
