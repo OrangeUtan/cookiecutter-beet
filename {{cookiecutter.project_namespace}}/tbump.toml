@@ -20,3 +20,12 @@ search = 'version = "{current_version}"'
 
 [[file]]
 src = "beet-release.json"
+
+[[file]]
+src = "datapack/data/{{cookiecutter.user_namespace}}/functions/{{cookiecutter.project_namespace}}/load.mcfunction"
+
+[[file]]
+src = "datapack/data/{{cookiecutter.user_namespace}}/functions/{{cookiecutter.project_namespace}}/install.mcfunction"
+
+[[file]]
+src = "datapack/data/{{cookiecutter.user_namespace}}/advancements/{{cookiecutter.project_namespace}}/root.json"
