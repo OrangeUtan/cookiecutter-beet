@@ -10,4 +10,6 @@
 - Auto LICENSE file
 - Invoke tasks
 - Version bumping with tbump
-- Load/Install/Uninstall function
+- load/install/uninstall function
+- [pre-commit](https://pre-commit.com/) git hook
+- Formatting with [black](https://github.com/psf/black) and [isort](https://github.com/PyCQA/isort)
