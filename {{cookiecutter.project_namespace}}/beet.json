@@ -1,0 +1,12 @@
+{
+    "name": "{{ cookiecutter.project_name }}",
+    "author": "{{ cookiecutter.github_username }}",
+    "description": "{{ cookiecutter.description }}",
+    "data_pack": {
+        "load": ["datapack"]
+    },
+    "resource_pack": {
+        "load": ["resourcepack"]
+    },
+    "output": "build"
+}

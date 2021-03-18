@@ -1,0 +1,16 @@
+{
+    "extend": ["beet.json"],
+    "output": "releases",
+    "version": "{{ cookiecutter.version }}",
+    "data_pack": {
+        "zipped": true
+    },
+    "resource_pack": {
+        "zipped": true
+    }{%- if cookiecutter.minify_release == 'y' %},
+    "pipeline": [
+        "beet.contrib.minify_json",
+        "beet.contrib.minify_function"
+    ]
+    {%- endif %}
+}

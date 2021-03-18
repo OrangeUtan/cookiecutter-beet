@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "{{cookiecutter.github_username}}",
+        "description": "",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner: '{{cookiecutter.minecraft_username}}'}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
