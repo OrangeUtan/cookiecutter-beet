@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cookiecutter-beet"
-version = "0.3.2"
+version = "0.3.3"
 description = "Cookiecutter template for beet projects"
 authors = ["Oran9eUtan <Oran9eUtan@gmail.com>"]
 
