@@ -1,8 +1,15 @@
 {%- if cookiecutter.build_automation == "make" -%}
-.PHONY: format release
+.PHONY: install format release clean clean-build clean-release clean-beet
 
 DIST_DIR = dist
 BUILD_DIR = build
+
+{%- if cookiecutter.use_poetry == "y" %}
+install:
+	poetry lock -n
+	poetry install -n
+	poetry run pre-commit install
+{% endif %}
 
 format:
 	black . --config pyproject.toml
