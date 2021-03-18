@@ -7,7 +7,6 @@ Minimal [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template fo
     - [Generate project structure](#Generate-project-structure)
     - [Install build tools](#Install-build-tools)
     - [Install dependencies](#Install-dependencies)
-    - [Project structure overview](#Project-structure-overview)
 - [Features](#Features)
 
 ## Getting Started
@@ -39,6 +38,43 @@ Choose from 1, 2, 3, 4, 5, 6 [1]: 1
 minify_release [y]: y
 ```
 
+<details>
+    <summary><b>Generated project structure</b></summary>
+
+    hello_beet
+    ├── datapack
+    |   └── data
+    |       ├── global
+    |       |   └── advancements
+    |       |       ├── oran9eutan.json
+    |       |       └── root.json
+    |       ├── minecraft
+    |       |   └── tags
+    |       |       └── functions
+    |       |           └── load.json
+    |       └── oran9eutan
+    |           ├── advancements
+    |           |   └── hello_beet
+    |           |       └── root.json
+    |           └── functions
+    |               └── hello_beet
+    |                   ├── load.mcfunction
+    |                   ├── install.mcfunction
+    |                   └── uninstall.mcfunction
+    |
+    ├── resourcepack
+    |   ├── assets
+    |   |   └── .mcassetsroot
+    |   └── pack.png
+    ├── beet-release.json
+    ├── beet.json
+    ├── LINCENSE
+    ├── pyproject.toml
+    ├── README.md
+    ├── tasks.py
+    └── tbump.toml
+</details>
+
 ### Install build tools
 - [Invoke](http://www.pyinvoke.org/): `pip install invoke`<br>
 - Poetry: https://python-poetry.org/docs/#installation
@@ -47,45 +83,12 @@ minify_release [y]: y
 ```
 $ invoke install
 ```
-
-### Project structure overview
-```
-hello_beet
-├── datapack
-|   └── data
-|       ├── global
-|       |   └── advancements
-|       |       ├── oran9eutan.json
-|       |       └── root.json
-|       ├── minecraft
-|       |   └── tags
-|       |       └── functions
-|       |           └── load.json
-|       └── oran9eutan
-|           ├── advancements
-|           |   └── hello_beet
-|           |       └── root.json
-|           └── functions
-|               └── hello_beet
-|                   ├── load.mcfunction
-|                   ├── install.mcfunction
-|                   └── uninstall.mcfunction
-|
-├── resourcepack
-|   ├── assets
-|   |   └── .mcassetsroot
-|   └── pack.png
-├── beet-release.json
-├── beet.json
-├── LINCENSE
-├── pyproject.toml
-├── README.md
-├── tasks.py
-└── tbump.toml
-```
+The **install** task will automatically setup Poetry and pre-commit for you
 
 ## Features
 - Preconfigured [Beet](https://github.com/mcbeet/beet) project
 - Python dependency management with [Poetry](https://python-poetry.org/)
 - Version bumping with [tbump](https://github.com/TankerHQ/tbump)
 - Task execution using [Invoke](http://www.pyinvoke.org/) (Python Makefile equivalent)
+- [pre-commit](https://pre-commit.com/) git hook
+- Formatting with [black](https://github.com/psf/black) and [isort](https://github.com/PyCQA/isort)
