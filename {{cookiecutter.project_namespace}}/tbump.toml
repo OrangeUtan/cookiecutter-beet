@@ -14,9 +14,11 @@ regex = '''
 message_template = "Bump to {new_version}"
 tag_template = "v{new_version}"
 
+{%- if cookiecutter.use_poetry == "y" %}
 [[file]]
 src = "pyproject.toml"
 search = 'version = "{current_version}"'
+{% endif %}
 
 [[file]]
 src = "beet-release.json"
