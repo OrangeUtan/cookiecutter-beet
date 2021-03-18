@@ -12,5 +12,8 @@
 
     "minify_release": "y",
     "use_poetry": "y",
-    "build_automation": ["invoke", "make"]
+    "build_automation": ["invoke", "make"],
+
+    "datapack": "y",
+    "resourcepack": "y"
 }

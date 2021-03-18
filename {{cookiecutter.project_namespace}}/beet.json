@@ -2,11 +2,15 @@
     "name": "{{ cookiecutter.project_name }}",
     "author": "{{ cookiecutter.github_username }}",
     "description": "{{ cookiecutter.description }}",
+    {% if cookiecutter.datapack == "y" -%}
     "data_pack": {
         "load": ["datapack"]
     },
+    {%- endif %}
+    {% if cookiecutter.resourcepack == "y" -%}
     "resource_pack": {
         "load": ["resourcepack"]
     },
+    {%- endif %}
     "output": "build"
 }

@@ -2,12 +2,17 @@
     "extend": ["beet.json"],
     "output": "releases",
     "version": "{{ cookiecutter.version }}",
+    {% if cookiecutter.datapack == "y" -%}
     "data_pack": {
         "zipped": true
     },
+    {%- endif %}
+    {% if cookiecutter.resourcepack == "y" -%}
     "resource_pack": {
         "zipped": true
-    }{%- if cookiecutter.minify_release == 'y' %},
+    },
+    {%- endif %}
+    {% if cookiecutter.minify_release == 'y' -%}
     "pipeline": [
         "beet.contrib.minify_json",
         "beet.contrib.minify_function"

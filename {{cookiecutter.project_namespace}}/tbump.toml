@@ -23,6 +23,7 @@ search = 'version = "{current_version}"'
 [[file]]
 src = "beet-release.json"
 
+{% if cookiecutter.datapack == "y" -%}
 [[file]]
 src = "datapack/data/{{cookiecutter.user_namespace}}/functions/{{cookiecutter.project_namespace}}/load.mcfunction"
 
@@ -31,3 +32,4 @@ src = "datapack/data/{{cookiecutter.user_namespace}}/functions/{{cookiecutter.pr
 
 [[file]]
 src = "datapack/data/{{cookiecutter.user_namespace}}/advancements/{{cookiecutter.project_namespace}}/root.json"
+{%- endif %}
