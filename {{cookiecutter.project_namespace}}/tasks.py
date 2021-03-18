@@ -1,3 +1,4 @@
+{%- if cookiecutter.build_automation == "invoke" -%}
 import shutil
 import subprocess
 import sys
@@ -83,3 +84,6 @@ def clean(c):
         shutil.rmtree(DIST_DIR)
     if BUILD_DIR.exists():
         shutil.rmtree(BUILD_DIR)
+
+    run(["beet", "cache", "--clear"])
+{%- endif -%}
